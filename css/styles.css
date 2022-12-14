@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -12,9 +15,11 @@ header{
     display: flex;
 }
 .head ul li{
-  opacity: 0;
+    opacity: 0;
 }
-@media screen and (min-width: 481px){
+
+
+@media screen and (min-width: 1440px){
   .head{
     height: 80px;
   }
@@ -31,11 +36,9 @@ header{
   .navi-sec ul li{
     width: 80px;
     color: burlywood;
-    /* border: #fff 1px solid;
-    border-radius: 6px; */
     padding: 20px 0;
     margin-top: -10px;
-    width: 200px;
+    width: 160px;
     text-align: center;
     margin-right: 20px;
     justify-content: center;
@@ -58,8 +61,8 @@ header{
   }
 }
 .head h1{
-    padding: 20px;
-    font-size: 20px;
+    padding: 26px 10px 10px;
+    font-size: 24px;
     color: burlywood;
     letter-spacing: 3px;
 }
@@ -79,7 +82,7 @@ hamburger(ハンバーガーアイコン)
 .hamburger {
   position: absolute;
   right: 20px;
-  top: 20px;
+  top: 24px;
   width: 50px;
   height: 40px;
   cursor: pointer;
@@ -206,7 +209,7 @@ main {
     line-height: 70px;
     color: burlywood;
     position: absolute;
-    top: 80px;
+    top: 90px;
 }
 .main-head h3{
     font-size: 20px;
@@ -261,7 +264,7 @@ main {
 .about-us{
     margin-top: 70px;
 }
-.about-us h2{
+.about-us-h2{
     color: #fff;
     font-size: 38px;
     margin-left: 4%;
@@ -293,6 +296,31 @@ main {
     line-height: 26px;
     margin: 0 auto;
 }
+@media screen and (min-width: 481px){
+    .about-us-h2{
+        font-size: 80px;
+        width: 80%;
+        margin: 120px auto 30px;
+        letter-spacing: 10px;
+    }
+    .about-us{
+        width: 400px;
+    }
+    .about-us h3{
+        font-size: 22px;
+    }
+    .about-us p{
+        font-size: 18px;
+        line-height: 32px;
+    }
+    .sec-2{
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin: 0 auto;
+    }
+}
 
 /* -----------section3-------------- */
 
@@ -319,6 +347,26 @@ main {
     font-size: 14px;
     line-height: 22px;
     margin: 40px auto;
+}
+
+@media screen and (min-width: 481px){
+    .message{
+        width: 80%;
+    }
+    .message h2{
+        font-size: 40px;
+        width: 260px;
+        margin-top: 100px;
+    }
+    .message-logo{
+        display: flex;
+        margin: 80px auto;
+    }
+    .message p{
+        font-size: 18px;
+        line-height: 32px;
+        margin-top: -10px;
+    }
 }
 
 /* ------------section4---------- */
@@ -351,6 +399,21 @@ main {
     font-size: 14px;
 }
 
+@media screen and (min-width: 481px){
+    .conpany{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .conpany ul li{
+        padding: 20px;
+    }
+    .conpany h2{
+        font-size: 40px;
+        width: 260px;
+        margin-top: 100px;
+    }
+}
+
 /* ---------section5--------- */
 
 .contact{
@@ -381,6 +444,42 @@ main {
     margin: 10px auto 0;
 }
 
+@media screen and (min-width: 481px){
+    .contact img{
+        height: 520px;
+        background-position: center;
+        background-size: cover;
+    }
+    .contact-text{
+        transform: translateY(-420px);
+    }
+    .contact-text h3{
+        font-size: 28px;
+        padding-bottom: 40px;
+        letter-spacing: 4px;
+    }
+    .contact-text p{
+        font-size: 18px;
+        line-height: 38px;
+        letter-spacing: 2px;
+    }
+    .botan p{
+        width: 340px;
+        padding: 8px;
+        letter-spacing: 2px;
+        margin-top: 40px;
+        cursor: pointer;
+        color: #fff;
+    }
+    .botan:hover{
+        opacity: .8;
+        transition: .3s;
+    }
+    a{
+        text-decoration: none;
+    }
+}
+
 /* --------footer-------- */
 
 footer ul{
@@ -399,6 +498,20 @@ footer ul li{
     border-bottom: burlywood 1px solid;
     margin: 0 auto;
     list-style: none;
+}
+
+@media screen and (min-width: 481px){
+    footer ul li{
+        font-size: 18px;
+        padding: 24px;
+        letter-spacing: 8px;
+        width: 60%;
+    }
+    footer ul li:hover{
+        opacity: .6;
+        transition: .3s;
+        cursor: pointer;
+    }
 }
 
 
